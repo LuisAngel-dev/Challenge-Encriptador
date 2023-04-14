@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo_alura.svg">
+  <link rel="stylesheet" href="styles/global.css">
+  <script src="js/main.js" defer></script>
+  <title>Challenge Encriptador - luisruiz.dev</title>
+</head>
+<body>
+  <header>
+    <img src="images/logo_alura.svg" alt="Logo Alura" class="logo">
+    <h1 class="title">Challenge Encriptador</h1>
+  </header>
+  <main>
+    <div class="main_container">
+      <textarea id="text" placeholder="Ingrese el texto aqui"></textarea>
+      <div>
+        <div class="info_text">
+          <img src="images/alert.svg" alt="Info">
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="buttons">
+          <button class="button" id="encrypt">Encriptar</button>
+          <button class="button" id="decrypt">Desencriptar</button>
+        </div>
+      </div>
+    </div>
+    <div class="result">
+      <div id="without_text">
+        <img src="images/placeholder.svg" alt="Sin texto" class="without_text_image">
+        <h3 class="without_text_title">Ningún mensaje fue encontrado</h3>
+        <p class="without_text_text">Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+      <div id="with_text">
+        <h3 class="with_text_title">Resultado</h3>
+        <p id="result_text" class="with_text_text"></p>
+        <button class="button_copy" id="copy">Copiar</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Hecho por <a href="https://luisruiz.dev" target="_blank">Luis Angel F. R.</a></p>
+  </footer>
+</body>
+</html>
